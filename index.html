@@ -227,7 +227,7 @@
   </div>
 </section>
 
-<footer class="footer">
+<footer id="contactos" class="footer">
   <div class="footer-container">
     <div class="footer-social">
       <a href="https://www.facebook.com/profile.php?id=61583056023449" target="_blank" class="social-link facebook">
@@ -256,3 +256,20 @@
 
 <!-- ICONOS FONT AWESOME -->
 <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+<!-- SONIDO DE CLICK -->
+<audio id="clickSound" src="audio/computer-mouse-click-352734.mp3" preload="auto"></audio>
+<script>
+  const elementosConSonido = document.querySelectorAll("a[href], button, .btnreto, .social-link");
+  const sonido = document.getElementById("clickSound");
+
+  sonido.volume = 0.6;        // Volumen del sonido
+  sonido.playbackRate = 1.5;  // 🔹 Velocidad del audio (1.0 = normal, 2.0 = el doble)
+
+  elementosConSonido.forEach(el => {
+    el.addEventListener("click", () => {
+      sonido.currentTime = 0;
+      sonido.play().catch(err => console.log("Bloqueo de reproducción:", err));
+    });
+  });
+</script>
