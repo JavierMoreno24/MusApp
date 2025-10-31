@@ -665,10 +665,10 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  margin-bottom: 20px;
-  margin-left: 20px;
+  margin-left: 10px;
+  position: relative;
+  top: 60px;
 }
-
 .social-link {
   display: flex;
   align-items: center;
@@ -686,10 +686,12 @@ body {
 /* Estilos únicos por red */
 .social-link.facebook {
   background-color: #1877f2;
+  opacity: 80%;
 }
 
 .social-link.instagram {
   background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);
+  opacity: 80%;
 }
 
 .social-link:hover {
@@ -718,6 +720,7 @@ body {
 .footer-links a:hover {
   color: var(--color-primary);
   transform: scale(1.05);
+  opacity: 100%;
 }
 
 /* Derechos reservados */
