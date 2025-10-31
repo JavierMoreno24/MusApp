@@ -1,0 +1,258 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MusApp - Un nido para artistas</title>
+
+  <!-- Fuente Nunito Sans -->
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Archivos CSS (en orden correcto) -->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/componentes.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <!-- contenido -->
+</body>
+</html>
+
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<!-- NAVBAR -->
+<nav class="nav">
+  <div class="container">
+    <div class="nav-links">
+      <a href="#inicio">Inicio</a>
+      <a href="#galeria">Galería</a>
+      <a href="#comunidad">Comunidad</a>
+      <a href="#contactos">Contactos</a>
+    </div>
+  </div>
+</nav>
+
+  <!-- LOGO -->
+<section class="seccion-logo">
+  <div class="seccion-logow">
+    <img src="imagenes/logo bueno.png" alt="logo"/>
+  </div>
+</section>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Split Layout Ejemplo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HERO SECTION (Split Layout 14-column grid) -->
+  <section id="inicio" class="hero container">
+    
+    <!-- Texto a la izquierda -->
+    <div class="hero-text">
+      <h1>Un nido para artistas <br>
+        que buscan crear,<br>
+         compartir e inspirar</h1>
+               <p>
+        Conecta con una comunidad de artistas que comparten tu pasión por la inspiración,
+        la creación y la colaboración.
+      </p>
+
+      <div class="hero-buttons">
+        <button class="btn secondary">Explorar</button>
+        <a href="#retos" class="btn secondary">Participar en retos</a>
+      </div>
+    </div>
+
+    <!-- Imagen a la derecha -->
+    <div class="hero-image">
+      <img src="imagenes/bañera principal para sitio web.png" alt="Artista inspirando" />
+    </div>
+
+  </section>
+
+</body>
+</html>
+
+
+<!-- RETOS -->
+ 
+<section id="retos" class="retos container">
+  
+  <!-- Título -->
+  <div class="retos-text" style="grid-column: 1 / 8;">
+    <h2 class="retos-titulo">Retos recomendados</h2>
+  </div>
+
+  <!-- Contenedor de los 3 retos -->
+  <div class="retos-grid" style="grid-column: 2 / 14;">
+    
+    <!-- Reto 1 -->
+    <div class="reto-card">
+      <img src="imagenes/retos/reto azul w.png" alt="Reto 1">
+      <h3>Reto color del mes</h3>
+      <p>Usa solo tonos azules.</p>
+    </div>
+
+    <!-- Reto 2 -->
+    <div class="reto-card">
+      <img src="imagenes/retos/cara expresiva w.png" alt="Reto 2">
+      <h3>Retratos Expresivos:</h3>
+      <p>captura emociones en tu estilo único.</p>
+    </div>
+
+    <!-- Reto 3 -->
+    <div class="reto-card">
+      <img src="imagenes/retos/mundos w.png" alt="Reto 3">
+      <h3>Mundos Imaginarios:</h3>
+      <p>Inventa un escenario fantástico.</p>
+    </div>
+<div class="reto-buttons">
+  <a href="botones activados/todosRetos.html" class="btnreto">Ver todos los retos</a>
+</div>
+</section>
+
+<!-- Sección RETOS POPULARES DE LA SEMANA -->
+<section>
+  <div class="retosegundo" class="retosegundoconta">
+       <h2 class="textsub-reto">Retos populares de la semana</h2>
+    </a>   
+  </div>
+
+  <!-- ANIMACIÓN -->
+  <div class="reto-video">
+    <video class="video-wrapper" autoplay muted loop playsinline>
+      <source src="videos/datos animacion (clip unido).mp4" type="video/mp4">
+    </video>
+  </div>
+</section>
+
+<!-- GALERIA -->
+
+<section id="galeria" class="galeriacontainer">
+  <!-- Título de la galería -->
+  <h2 class="text-subtitle">Galería de obras</h2>
+
+  <!-- Botones de filtro -->
+ <div class="btn-container">
+  <!-- Dropdown Técnicas -->
+  <div class="dropdown">
+    <button class="text-btn">Técnicas ▾</button>
+    <div class="dropdown-content">
+      <a href="#">Óleo</a>
+      <a href="#">Acrílico</a>
+      <a href="#">Acuarela</a>
+      <a href="#">Digital</a>
+      <a href="#">Collage</a>
+    </div>
+  </div>
+
+  <!-- Dropdown Estilo -->
+  <div class="dropdown">
+    <button class="text-btn">Estilo ▾</button>
+    <div class="dropdown-content">
+      <a href="#">Realismo</a>
+      <a href="#">Surrealismo</a>
+      <a href="#">Minimalismo</a>
+      <a href="#">Abstracto</a>
+      <a href="#">Urbano</a>
+    </div>
+  </div>
+    <!-- Otros botones -->
+  <button class="text-btn">Popularidad</button>
+  <button class="text-btn">Más recientes</button>
+</div>
+
+  <!-- Galería de imágenes -->
+  <div class="galeria-imagenes">
+    <div class="grid-galeria">
+       <img src="imagenes/galeria/1w.png" alt="Obra 1" class="galeria-img">
+      <img src="imagenes/galeria/2w.png" alt="Obra 2" class="galeria-img">
+      <img src="imagenes/galeria/3w.png" alt="Obra 3" class="galeria-img">
+      <img src="imagenes/galeria/4w.png" alt="Obra 4" class="galeria-img">
+      <img src="imagenes/galeria/5w.png" alt="Obra 5" class="galeria-img">
+      <img src="imagenes/galeria/6w.png" alt="Obra 6" class="galeria-img">
+      <img src="imagenes/galeria/7w.png" alt="Obra 7" class="galeria-img">
+      <img src="imagenes/galeria/8w.png" alt="Obra 8" class="galeria-img">
+      <img src="imagenes/galeria/9w.png" alt="Obra 9" class="galeria-img">
+      <img src="imagenes/galeria/10w.png" alt="Obra 10" class="galeria-img">
+      <img src="imagenes/galeria/11w.png" alt="Obra 11" class="galeria-img">
+      <img src="imagenes/galeria/12w.png" alt="Obra 12" class="galeria-img">
+    </div>
+  </div>
+
+  <!-- Botón para subir obra -->
+  <div class="subir">
+    <button class="subir-btn">Subir obra</button>
+  </div>
+</section>
+
+
+<!-- SECCIÓN 4: COMUNIDAD -->
+<section id="comunidad" class="containercomunidad">
+  <h2 class="text-subtitlepp">Comunidad</h2>
+
+  <!-- Contenedor cuadros split -->
+  <div class="cuadro-split">
+    <div class="cuadro">
+      <img src="imagenes/comunidad/chicaw.png" alt="ana gomez" class="img-escalable">
+      <h3>Ana Gómez</h3>
+      <p>Sueños en acuarela.</p>
+    </div>
+    <div class="cuadro">
+      <img src="imagenes/comunidad/chicow.png" alt="carlos rivera" class="img-escalable">
+      <h3>Carlos Rivera</h3>
+      <p>Me encanta el contraste de colores.</p>
+    </div>
+  </div>
+
+  <!-- Botón general -->
+  <div class="subir">
+    <button class="subir-btn">Unirse a la comunidad</button>
+  </div>
+</section>
+
+  <!-- ANIMACIÓN -->
+<section>
+  <div class="videonly">
+    <video class="videoMusapp" controls>
+      <source src="videos/MusApp_1.mp4" alt="video de presentación" type="video/mp4">
+    </video>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-social">
+      <a href="https://facebook.com" target="_blank" class="social-link facebook">
+        <i class="fa-brands fa-facebook-f"></i> Facebook
+      </a>
+      <a href="https://instagram.com" target="_blank" class="social-link instagram">
+        <i class="fa-brands fa-instagram"></i> Instagram
+      </a>
+    </div>
+
+    <ul class="footer-links">
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#terminos">Términos y condiciones</a></li>
+      <li><a href="#privacidad">Política de privacidad</a></li>
+      <li><a href="#envios">Política de envíos</a></li>
+      <li><a href="#acerca">Acerca de MusApp</a></li>
+      <li><a href="#etico">Trabajo ético</a></li>
+      <li><a href="#avisos">Avisos legales</a></li>
+    </ul>
+
+    <div class="footer-copy">
+      <p>&copy; 2025 MusApp. Todos los derechos reservados.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ICONOS FONT AWESOME -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>

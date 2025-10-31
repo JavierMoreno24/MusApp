@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Retos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #FFE3AF;
+      color: #efebeb;
+      padding: 40px;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: auto;
+      font-family: 'Nunito Sans', sans-serif; /* ← Fuente aplicada */
+    }
+    h1, h2, h3, a, p {
+  font-family: 'Nunito Sans', sans-serif;
+  align-items: center;
+  color: black;
+  justify-content: center;
+}
+
+    /* Contenedor de los retos */
+.reto {
+  display: flex;
+  flex-wrap: wrap;           /* Permite varias filas */
+  justify-content: center;   
+  gap: 20px;                 /* Espacio entre imágenes */
+  max-width: 1200px;
+  margin: 0 auto;            
+}
+
+/* Estilo de cada imagen */
+.reto img {
+  flex: 1 1 calc(25% - 20px); /* 4 imágenes por fila con gap incluido */
+  max-width: calc(25% - 20px);
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+/* Efecto hover para las imágenes */
+.reto img:hover {
+  transform: scale(1.07);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+a {
+  display: inline-block;
+  background-color: #fefefe;     /* Verde principal */
+  color: #000000;                /* Texto oscuro para contraste */
+  text-decoration: none;         /* Sin subrayado */
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  margin-top: 60px;
+}
+
+/* Efecto al pasar el mouse */
+a:hover {
+  background-color: #ff9d26;     /* Verde un poco más oscuro */
+  color: #fefefe;
+  transform: scale(1.05);        /* Pequeño zoom */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Opcional: centrado si está al final de la página */
+body {
+  text-align: center;
+}
+
+/* Responsivo: tablets y pantallas medianas */
+@media (max-width: 992px) {
+  .reto img {
+    flex: 1 1 calc(50% - 20px); /* 2 imágenes por fila */
+    max-width: calc(50% - 20px);
+  }
+}
+
+
+  </style>
+</head>
+<body>
+  <h1> Retos</h1>
+  <div class="reto">
+    <img src="retosimg/movimiento.png" alt="movimiento" >
+    <img src="retosimg/perspectiva.png" alt="perspectiva" >
+    <img src="retosimg/fusion de estilos.png" alt="fusion" >
+    <img src="retosimg/naturaleza.png" alt="naturaleza" >
+    <img src="retosimg/luz y sombra.png" alt="lys" >
+    <img src="retosimg/azul.png" alt="azul" >
+    <img src="retosimg/retrato.png" alt="retrato" >
+    <img src="retosimg/mundos.png" alt="mundos" >
+  </div>
+
+
+
+<a href="../index.html#retos">← Volver</a>
+</body>
+</html>

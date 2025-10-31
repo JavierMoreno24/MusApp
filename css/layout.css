@@ -1,0 +1,26 @@
+/* =========================
+   SUBTÍTULOS
+   ========================= */
+.text-subtitle {
+  grid-column: 2 / -1; /* empieza en columna 2 y llega hasta la última */
+  font-family: var(--font-main);
+  font-weight: 440;
+  font-size: var(--fs-subtitle);
+}
+
+/* ==========================================
+   ALINEACIÓN UNIVERSAL CON LA COLUMNA 2
+   ========================================== */
+
+/* Clase reutilizable si necesitás aplicarla a otros elementos */
+.alinear-col2 {
+  grid-column: 2 / -1; /* todos empiezan en columna 2 */
+}
+
+/* Aplicación automática a títulos y párrafos */
+h1, h2, h3, p, .text-subtitle, .text-bañera, .text-comunidad-texto {
+  grid-column: 2 / -1; /* empieza en columna 2 y se extiende hasta el final */
+  max-width: 1440px;
+  margin: 0 auto; /* centrado horizontal si queda espacio */
+}
+
