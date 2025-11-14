@@ -551,6 +551,39 @@ body {
   border: transparent;
   transform: translateY(-1px)
 }
+  /* =========================
+   BOTON comprar
+   ========================= */
+.comprar {
+  display: flex;
+  justify-content: flex-end; /* puedes cambiar a: flex-start | flex-end | space-between */
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 100px;
+}
+
+/* SUBIR BOTON*/
+.comprar-btn {
+  background-color: transparent;
+  color: #000;
+  border: 2px solid var(--color-primary);
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Efecto hover */
+.comprar-btn:hover {
+  background-color: var(--color-primary);
+  color: #ffffff;
+  border: transparent;
+  transform: translateY(-1px)
+}
 
 /* Contenedor de los cuadros split */
 .cuadro-split {
